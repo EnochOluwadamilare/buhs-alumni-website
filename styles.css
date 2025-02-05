@@ -12,15 +12,21 @@
   
   /* Header Styles */
   header {
-    background-color: #1B3F5D; /* School color */
-    color: #fff; 
+    background-color: #1B3F5D; 
+    color: #fff;
     padding: 20px 0;
+    display: flex; /* Add flexbox for horizontal alignment */
+    justify-content: space-between; /* Align logo and nav to opposite ends */
+    /* align-items: center; */
   }
   
   .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex; /* Add flexbox for container */
+    justify-content: space-between; /* Align logo and nav within container */
+    align-items: center; /* Vertically center logo and nav within container */ 
   }
   
   .logo img {
@@ -29,8 +35,7 @@
   
   nav ul {
     list-style: none;
-    display: flex;
-    justify-content: flex-end;
+    display: flex; 
   }
   
   nav li {
@@ -38,13 +43,14 @@
   }
   
   nav a {
-    color: #fff; 
+    color: #fff;
     text-decoration: none;
   }
-  
+
   /* Hero Section Styles */
   .hero {
-    background-color: #fff; 
+    background-color: #fff;
+    background-image: url(./images/banner.jpg);
     padding: 50px 0;
     text-align: center;
   }
